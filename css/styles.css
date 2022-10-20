@@ -45,6 +45,9 @@ body{
     gap: 1.3rem;
 }
 
+/*.formularioInferior .checkbox{
+    color: rgb(88, 88, 88);
+}  */
 
 .inferior #email{
     display: none;
@@ -211,5 +214,7 @@ input[type = password]{
     .or{
         display: none;
     }
+
+
 
 }
