@@ -1,40 +1,36 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 90%;
+    width: 80%;
     align-items: center;
     max-width: 100%;
     margin: 0;
-    color: grey;
+    color: black;
     margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-body img{
+.contenedor1 img{
     width: 100%;
 }
 .formulario{
     width: 95%;
 }
-/* superior parte */
-.formulario .superior{
+/* Parte Superior */
+.formulario .parteSuperior{
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: rgb(53, 53, 53);
-}
-.superior .iconos{
-    
 }
 
-/*mitad*/
-.formulario .medio{
+
+.formulario .or{
     margin: 1rem;
     position: relative;
     z-index: 1;
 }
-.formulario .medio p{
+.formulario .or p{
     position: absolute;
     text-align: center;
-    color: rgb(53, 53, 53);
     bottom: -25px;
     background-color: white;
     padding-left: 0.5rem;
@@ -44,17 +40,13 @@ body img{
 }
 
 /* parte inferior */
-.formulario .inferior{
+.formulario .formularioInferior{
     display: grid;
     gap: 1.3rem;
 }
-.formulario .inferior label{
-    
-}
-.inferior .checkbox{
-    color: rgb(88, 88, 88);
-}
-.inferior #emailpass{
+
+
+.inferior #email{
     display: none;
 }
 input[type = text]{
@@ -67,37 +59,54 @@ input[type = password]{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-.contraseñas{
+.cont{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 1rem;
 }
-.contraseñas a{
+.cont a{
     text-align: end;
     margin-right: 1rem;
     text-decoration: none;
-    color: grey;
+    color: black;
 }
-.contraseñas #rememberMe {
+.cont #remember {
     border-radius: 0.3rem;
     stroke-width: 4px;
 }
-.inferior #login{
+.formularioInferior #login{
     color: white;
     text-decoration: none;
     text-align: center;
-    width: 30%;
-    padding: 0.7rem;
-    background-color: rgb(91, 91, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 25%;
+    padding: 1rem;
+    background-color: #3B5998;
     border-radius: 0.5rem;
 }
-.inferior p{
+.formularioInferior p{
     text-align: start;
-    color: rgb(53, 53, 53);
 }
-.inferior p a{
+.formularioInferior p a{
     text-decoration: none;
-    color: crimson;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Iconos y texto*/
+.parteSuperior .iconos
+{
+    width: 6%;
+    padding: 1px;
+    border: 1px solid #3B5998;
+    background-color: #3B5998;
+    border-radius: 4rem ;
+    cursor: pointer;
+    
+
 }
 
 @media (max-width:768px) {
@@ -108,37 +117,33 @@ input[type = password]{
         align-items: center;
         max-width: 100%;
         margin: 0;
-        color: grey;
+        color: black;
         margin-left: 5%;
     }
-    body img{
+    .body img{
         width: 100%;
         max-height: 80%;
     }
     .formulario{
         width: 95%;
     }
-    /* superior parte */
-    .formulario .superior{
+    /* parte superior del formulario */
+    .formulario .parteSuperior{
         display: flex;
         align-items: center;
         gap: 1rem;
-        color: rgb(53, 53, 53);
-    }
-    .superior .iconos{
         
     }
     
-    /*mitad*/
-    .formulario .medio{
+    
+    .formulario .or{
         margin: 1rem;
         position: relative;
         z-index: 1;
     }
-    .formulario .medio p{
+    .formulario .or p{
         position: absolute;
         text-align: center;
-        color: rgb(53, 53, 53);
         bottom: -25px;
         background-color: white;
         padding-left: 0.5rem;
@@ -148,16 +153,13 @@ input[type = password]{
     }
     
     /* parte inferior */
-    .formulario .inferior{
+    .formulario .formularioInferior{
         display: grid;
         gap: 1.3rem;
     }
-    .formulario .inferior label{
-        
-    }
-    .inferior .checkbox{
-        color: rgb(88, 88, 88);
-    }
+    
+
+    /* Correo y contra*/
     .inferior #emailpass{
         display: none;
     }
@@ -171,39 +173,42 @@ input[type = password]{
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
-    .contraseñas{
+    .cont{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 1rem;
     }
-    .contraseñas a{
+    .cont a{
         text-align: end;
         margin-right: 1rem;
         text-decoration: none;
-        color: grey;
+        color: black;
     }
-    .contraseñas #rememberMe {
+    .cont #remember {
         border-radius: 0.3rem;
         stroke-width: 4px;
     }
-    .inferior #login{
+    .formularioInferior #login{
         color: white;
         text-decoration: none;
         text-align: center;
         width: 90%;
         padding: 0.7rem;
-        background-color: rgb(91, 91, 243);
+        background-color: #3B5998;
         border-radius: 0.5rem;
+        text-transform: uppercase;
     }
-    .inferior p{
+    .formularioInferior p{
         text-align: start;
-        color: rgb(53, 53, 53);
+
     }
-    .inferior p a{
+    .formularioInferior p a{
         text-decoration: none;
-        color: crimson;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
-    .medio{
+    .or{
         display: none;
     }
 
