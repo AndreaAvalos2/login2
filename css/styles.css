@@ -1,80 +1,210 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-body
-{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-}
-
-.imgLogin
-{
-    margin: 50px;
-}
-.imagenIz
-{
-    width: 25rem;
-}
-
-/* Contenedor */
-
-.contenedorLogin
-
-{
-    margin: 3rem;
-    padding: 1rem;
+body{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 5rem;
+    width: 90%;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    color: grey;
+    margin-left: 5%;
 }
-.loginContenedor .contenedorSingWith 
-{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+body img{
+    width: 100%;
+}
+.formulario{
+    width: 95%;
+}
+/* superior parte */
+.formulario .superior{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(53, 53, 53);
+}
+.superior .iconos{
     
 }
 
-
-.loginContenedor .btnFace
-{
-    width: 9%;
-    padding: 1px;
-    border: 1px solid #2196f3;
-    background-color: #2196f3;
- border-radius:4rem ;
- cursor: pointer;
-}
-.loginContenedor .btnTwitter
-{
-    width: 9%;
-    padding: 1px;
-    border: 1px solid #2196f3;
-    background-color: #2196f3;
- border-radius:4rem ;
- cursor: pointer;
-}
-
-.loginContenedor .btnIn
-{
-    width: 9%;
-    padding: 1px;
-    border: 1px solid #2196f3;
-    background-color: #2196f3;
- border-radius:4rem ;
-    cursor: pointer;
-}
-
-.btnLogin .login
-{
-    background-color: #2196f3;
+/*mitad*/
+.formulario .medio{
+    margin: 1rem;
     position: relative;
-    border-radius: .3rem;
+    z-index: 1;
+}
+.formulario .medio p{
+    position: absolute;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    bottom: -25px;
+    background-color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    left: 47%;
+    z-index: 2;
 }
 
-.btnLogin >a
-{
-    color: red;
+/* parte inferior */
+.formulario .inferior{
+    display: grid;
+    gap: 1.3rem;
+}
+.formulario .inferior label{
+    
+}
+.inferior .checkbox{
+    color: rgb(88, 88, 88);
+}
+.inferior #emailpass{
+    display: none;
+}
+input[type = text]{
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+input[type = password]{
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.contraseñas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+.contraseñas a{
+    text-align: end;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: grey;
+}
+.contraseñas #rememberMe {
+    border-radius: 0.3rem;
+    stroke-width: 4px;
+}
+.inferior #login{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 30%;
+    padding: 0.7rem;
+    background-color: rgb(91, 91, 243);
+    border-radius: 0.5rem;
+}
+.inferior p{
+    text-align: start;
+    color: rgb(53, 53, 53);
+}
+.inferior p a{
+    text-decoration: none;
+    color: crimson;
+}
+
+@media (max-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+        color: grey;
+        margin-left: 5%;
+    }
+    body img{
+        width: 100%;
+        max-height: 80%;
+    }
+    .formulario{
+        width: 95%;
+    }
+    /* superior parte */
+    .formulario .superior{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: rgb(53, 53, 53);
+    }
+    .superior .iconos{
+        
+    }
+    
+    /*mitad*/
+    .formulario .medio{
+        margin: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+    .formulario .medio p{
+        position: absolute;
+        text-align: center;
+        color: rgb(53, 53, 53);
+        bottom: -25px;
+        background-color: white;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        left: 47%;
+        z-index: 2;
+    }
+    
+    /* parte inferior */
+    .formulario .inferior{
+        display: grid;
+        gap: 1.3rem;
+    }
+    .formulario .inferior label{
+        
+    }
+    .inferior .checkbox{
+        color: rgb(88, 88, 88);
+    }
+    .inferior #emailpass{
+        display: none;
+    }
+    input[type = text]{
+        padding: 0.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    input[type = password]{
+        padding: 0.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .contraseñas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 1rem;
+    }
+    .contraseñas a{
+        text-align: end;
+        margin-right: 1rem;
+        text-decoration: none;
+        color: grey;
+    }
+    .contraseñas #rememberMe {
+        border-radius: 0.3rem;
+        stroke-width: 4px;
+    }
+    .inferior #login{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 90%;
+        padding: 0.7rem;
+        background-color: rgb(91, 91, 243);
+        border-radius: 0.5rem;
+    }
+    .inferior p{
+        text-align: start;
+        color: rgb(53, 53, 53);
+    }
+    .inferior p a{
+        text-decoration: none;
+        color: crimson;
+    }
+    .medio{
+        display: none;
+    }
+
 }
