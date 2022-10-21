@@ -99,11 +99,13 @@ input[type = password]{
 /* Iconos y texto*/
 .parteSuperior .iconos
 {
-    width: 6%;
+    display: flex;
+    width: 8%;
     padding: 1px;
-    border: 1px solid #3B5998;
+    border: 5px solid #3B5998;
     background-color: #3B5998;
-    border-radius: 4rem ;
+    border-radius: 3rem ;
+    justify-content: center;
     cursor: pointer;
     
 
